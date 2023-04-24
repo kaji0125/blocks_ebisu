@@ -481,6 +481,8 @@
 			margin:0;
 			padding:0;
 			color:#999b76;
+			font-weight:500;
+			font-family:"Roboto", sans-serif;
 			line-height:1;
 			dt {
 				margin:0 20px 6px 0;
@@ -497,16 +499,21 @@
 			dd {
 				margin:0;
 				padding:0;
-				letter-spacing:3px;
-				font-weight:700;
+				letter-spacing:2px;
+				font-weight:500;
 				font-size:58px;
 				font-family:"Roboto", sans-serif;
 				@media print, screen and (max-width: 767px) {
 					letter-spacing:1px;
-					font-size:38px;
+					font-size:36px;
+				}
+				@media print, screen and (max-width: 374px) {
+					letter-spacing:1px;
+					font-size:32px;
 				}
 				a {
 					color:#999b76;
+					letter-spacing:2px;
 					pointer-events:none;
 					@media print, screen and (max-width: 767px) {
 						pointer-events:all;

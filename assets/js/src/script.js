@@ -4,7 +4,8 @@ window.jQuery = jquery
 
 
 //画面の高さ制御
-if (navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/i)) {
+const ua = navigator.userAgent.toLowerCase()
+if (/android|ipod|ipad|iphone|macintosh/.test(ua) && 'ontouchend' in document) {
   window.addEventListener('orientationchange', () => {
     setTimeout(function () {
       let vh = window.innerHeight * 0.01;

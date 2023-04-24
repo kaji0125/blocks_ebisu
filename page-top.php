@@ -72,7 +72,7 @@ Template Name:トップページ
             <div class="index_feature__block photo04">
               <div class="horiguchi_coffee"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/horiguchi_coffee_logo.webp" alt="堀口珈琲"/></div>
               <div class="index_feature__text type02 in_view">
-                <h3 class="index_feature__h3">SPECIALTYCOFFE_</h3>
+                <h3 class="index_feature__h3">SPECIALTY COFFEE_</h3>
                 <p class="read"><span>仕事にも憩いにも美味しさを。<br>
                   絶品のコーヒーが日常を豊かに</span></p>
                 <p>ラウンジでは最高品質のコーヒーを1杯100円で提供。世界中からコーヒー豆（生豆）を調達し、自社焙煎しているスペシャルティコーヒーの専門店『堀口珈琲』がプロデュース。自分らしく「はたらく」を、満たしてくれます。</p>
@@ -179,8 +179,8 @@ Template Name:トップページ
     </div>
     <div class="index_keywords__line swiper-container move_right02">
       <ul class="swiper-wrapper">
-        <li class="swiper-slide"> <img src="<?php bloginfo('template_url'); ?>/assets/img/top/keyword_line_001.svg" alt=""/></li>
-        <li class="swiper-slide"> <img src="<?php bloginfo('template_url'); ?>/assets/img/top/keyword_line_001.svg" alt=""/></li>
+        <li class="swiper-slide"> <img src="<?php bloginfo('template_url'); ?>/assets/img/top/keyword_line_004.svg" alt=""/></li>
+        <li class="swiper-slide"> <img src="<?php bloginfo('template_url'); ?>/assets/img/top/keyword_line_004.svg" alt=""/></li>
       </ul>
     </div>
     <div class="index_casestudy">
@@ -307,6 +307,7 @@ Template Name:トップページ
               <p class="index_rooms_name">ROOM_206</p>
               <p class="index_rooms_type">1名向け個室</p>
               <p>自分専用の理想的なプライベート空間を確保する完全個室。仕事に必須のデスク、チェア、棚が備え付けられ、Wi-Fi、電源なども整備。小規模スペースながら、壁面のガラスサッシや高い天井によって開放感を感じられます。</p>
+			<div class="index_rooms_photo"> <img src="<?php bloginfo('template_url'); ?>/assets/img/common/room_photo_003.webp" alt=""/> </div>
             </div>
           </div>
           <div class="index_rooms_detail in_view">

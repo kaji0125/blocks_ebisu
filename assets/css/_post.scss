@@ -208,6 +208,17 @@
 					font-size:14px;
 				}
 			}
+			.wp-block-columns {
+				display:flex;
+				margin:0 0 0 -30px;
+				@media print, screen and (max-width: 767px) {
+					display:block;
+				}
+				.wp-block-column {
+					box-sizing:border-box;
+					padding:0 0 0 30px;
+				}
+			}
 		}
 	}
 }

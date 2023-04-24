@@ -9,11 +9,6 @@
 }
 
 
-
-
-
-
-
 /*******animation******/
 
 html {
@@ -250,8 +245,8 @@ html {
 			margin:0;
 			padding:0;
 			width:0;
-			height:calc(100vh - 130px);
-			height:calc(var(--vh, 1vh) * 100 - 130px);
+			/*height:calc(100vh - 130px);
+			height:calc(var(--vh, 1vh) * 100 - 130px);*/
 
 			&::before {
 				position:absolute;
@@ -289,8 +284,8 @@ html {
 				}
 			}
 			@media print, screen and (max-width: 767px) {
-				height:calc(100vh - 60px);
-				height:calc(var(--vh, 1vh) * 100 - 60px);
+				/*height:calc(100vh - 60px);
+				height:calc(var(--vh, 1vh) * 100 - 60px);*/
 			}
 			.index_hero__copy {
 				position:absolute;
@@ -732,6 +727,10 @@ html {
 
 					@media print, screen and (max-width: 767px) {
 						font-size:28px;
+					}
+					@media print, screen and (max-width: 374px) {
+						letter-spacing:1px;
+						font-size:26px;
 					}
 				}
 				p {
@@ -1520,8 +1519,11 @@ html {
 							backface-visibility:hidden;
 						}
 						img {
+							position:relative;
+							z-index:1;
 							width:100%;
 							height:auto;
+							opacity:0;
 						}
 						ul {
 							display:flex;
@@ -1562,6 +1564,10 @@ html {
 							padding:0;
 							border:#efefef solid 1px;
 							line-height:0;
+
+							img {
+								opacity:1;
+							}
 
 							&::before {
 								right:-100%;

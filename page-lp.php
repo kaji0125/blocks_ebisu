@@ -261,6 +261,7 @@ Template Name:BLOCKS EBISU LP
               <p class="lp-rooms_name">ROOM_206</p>
               <p class="lp-rooms_type">1名向け個室</p>
               <p>自分専用の理想的なプライベート空間を確保する完全個室。仕事に必須のデスク、チェア、棚が備え付けられ、Wi-Fi、電源なども整備。小規模スペースながら、壁面のガラスサッシや高い天井によって開放感を感じられます。</p>
+				<div class="lp-rooms_photo"> <img src="<?php bloginfo('template_url'); ?>/assets/img/common/room_photo_003.webp" alt=""/> </div>
             </div>
           </div>
           <div class="lp-rooms_detail">

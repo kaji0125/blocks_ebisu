@@ -1101,7 +1101,7 @@ select.office_select {
   letter-spacing: 2px;
   font-weight: 500;
   font-size: 58px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
   line-height: 1.5em;
   line-height: 1;
   pointer-events: none;
@@ -1897,6 +1897,12 @@ html.wf-active.visited #wrapper #index .index_hero .index_hero__scroll .arrow_an
 @media print, screen and (max-width: 767px) {
   #index .index_feature .index_feature__block .index_feature__text .index_feature__h3 {
     font-size: 28px;
+  }
+}
+@media print, screen and (max-width: 374px) {
+  #index .index_feature .index_feature__block .index_feature__text .index_feature__h3 {
+    letter-spacing: 1px;
+    font-size: 26px;
   }
 }
 #index .index_feature .index_feature__block .index_feature__text p {
@@ -2745,8 +2751,11 @@ html.wf-active.visited #wrapper #index .index_hero .index_hero__scroll .arrow_an
           backface-visibility: hidden;
 }
 #index .index_floor .index_floor__wrap .index_rooms_detail .index_rooms_description .index_rooms_photo img {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: auto;
+  opacity: 0;
 }
 #index .index_floor .index_floor__wrap .index_rooms_detail .index_rooms_description .index_rooms_photo ul {
   display: flex;
@@ -2779,6 +2788,9 @@ html.wf-active.visited #wrapper #index .index_hero .index_hero__scroll .arrow_an
   padding: 0;
   border: #efefef solid 1px;
   line-height: 0;
+}
+#index .index_floor .index_floor__wrap .index_rooms_detail.js-active .index_rooms_description .index_rooms_photo img {
+  opacity: 1;
 }
 #index .index_floor .index_floor__wrap .index_rooms_detail.js-active .index_rooms_description .index_rooms_photo::before {
   right: -100%;
@@ -4516,6 +4528,19 @@ html.wf-active.visited #wrapper #index .index_hero .index_hero__scroll .arrow_an
     font-size: 14px;
   }
 }
+#post .post_detail .entry .wp-block-columns {
+  display: flex;
+  margin: 0 0 0 -30px;
+}
+@media print, screen and (max-width: 767px) {
+  #post .post_detail .entry .wp-block-columns {
+    display: block;
+  }
+}
+#post .post_detail .entry .wp-block-columns .wp-block-column {
+  box-sizing: border-box;
+  padding: 0 0 0 30px;
+}
 
 #faq {
   margin: 0;
@@ -5138,6 +5163,8 @@ html.wf-active.visited #wrapper #index .index_hero .index_hero__scroll .arrow_an
   margin: 0;
   padding: 0;
   color: #999b76;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
   line-height: 1;
 }
 #contact .contact_tel dl dt {
@@ -5157,19 +5184,26 @@ html.wf-active.visited #wrapper #index .index_hero .index_hero__scroll .arrow_an
 #contact .contact_tel dl dd {
   margin: 0;
   padding: 0;
-  letter-spacing: 3px;
-  font-weight: 700;
+  letter-spacing: 2px;
+  font-weight: 500;
   font-size: 58px;
   font-family: "Roboto", sans-serif;
 }
 @media print, screen and (max-width: 767px) {
   #contact .contact_tel dl dd {
     letter-spacing: 1px;
-    font-size: 38px;
+    font-size: 36px;
+  }
+}
+@media print, screen and (max-width: 374px) {
+  #contact .contact_tel dl dd {
+    letter-spacing: 1px;
+    font-size: 32px;
   }
 }
 #contact .contact_tel dl dd a {
   color: #999b76;
+  letter-spacing: 2px;
   pointer-events: none;
 }
 @media print, screen and (max-width: 767px) {

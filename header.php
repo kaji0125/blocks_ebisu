@@ -7,8 +7,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
 <meta name="apple-mobile-web-app-title" content="BLOCKS OFFICE EBISU">
 <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
-<meta name="keywords" content="恵比寿,オフィス,BLOCKS,<?php wp_title('', true, 'right'); ?>">
-<meta name="description" content="<?php if( get_field('discription') ): ?><?php the_field('discription', $post->ID); ?><?php else: ?>東急目黒線「不動前」駅 徒歩4分の好立地に、 NEWオープン!! BLOCKS OFFICE EBISU<?php endif; ?>">
+<meta name="keywords" content="恵比寿,オフィス,BLOCKS,<?php wp_title('', true, 'right'); ?>">	
+<?php
+if ( is_singular( 'post' ) ) {
+  if ( have_posts() ): while ( have_posts() ): the_post();
+  echo '<meta name="description" content="' . mb_substr( get_the_excerpt(), 0, 100 ) . '" />';
+  echo "\n";
+  endwhile;
+  endif;
+} else {
+  echo '<meta name="description" content="BLOCKS OFFICE EBISU｜JR山手線・東京メトロ日比谷線「恵比寿」駅徒歩7分の好立地に、NEWオープン!!" />';
+  echo "\n";
+}
+?>	
 <meta property="og:title" content="<?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?>" />
 <meta property="og:type" content="article" />
 <?php
@@ -28,7 +39,7 @@ if ( is_singular( 'post' ) ) {
   endwhile;
   endif;
 } else {
-  echo '<meta property="og:description" content="" />';
+  echo '<meta property="og:description" content="BLOCKS OFFICE EBISU｜JR山手線・東京メトロ日比谷線「恵比寿」駅徒歩7分の好立地に、NEWオープン!!" />';
   echo "\n";
 }
 ?>
@@ -53,6 +64,40 @@ if ( has_post_thumbnail() && !is_archive() ) { //投稿にサムネイルがあ�
 <?php else: ?>
 <meta property="og:image" content="<?php bloginfo('template_url'); ?>/assets/img/common/fb.png" />
 <?php endif; ?>
+<meta name="twitter:card" content="summary">	
+<meta name="twitter:title" content="<?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?>" />
+<?php
+if ( is_singular( 'post' ) ) {
+  if ( have_posts() ): while ( have_posts() ): the_post();
+  echo '<meta name="twitter:description" content="' . mb_substr( get_the_excerpt(), 0, 100 ) . '" />';
+  echo "\n";
+  endwhile;
+  endif;
+} else {
+  echo '<meta name="twitter:description" content="BLOCKS OFFICE EBISU｜JR山手線・東京メトロ日比谷線「恵比寿」駅徒歩7分の好立地に、NEWオープン!!" />';
+  echo "\n";
+}
+?>
+<?php if(is_single()): ?>
+<?php
+$str = $post->post_content;
+$searchPattern = '/<img.*?src=(["\'])(.+?)\1.*?>/i'; //投稿にイメージがあるか調べる
+if ( has_post_thumbnail() && !is_archive() ) { //投稿にサムネイルがある場合の処理
+  $image_id = get_post_thumbnail_id();
+  $image = wp_get_attachment_image_src( $image_id, 'full' );
+  echo '<meta name="twitter:image" content="' . $image[ 0 ] . '" />';
+  echo "\n";
+} else if ( preg_match( $searchPattern, $str, $imgurl ) && !is_archive() ) { //投稿にサムネイルは無いが画像がある場合の処理
+  echo '<meta name="twitter:image" content="' . $imgurl[ 2 ] . '" />';
+  echo "\n";
+} else { //投稿にサムネイルも画像も無い場合、もしくはアーカイブページの処理
+  echo '<meta name="twitter:image" content="https://www.blocks-office.jp/ebisu/wp-content/themes/blocks_ebisu/assets/img/common/fb.png" />';
+  echo "\n";
+}
+?>
+<?php else: ?>
+<meta name="twitter:image" content="<?php bloginfo('template_url'); ?>/assets/img/common/fb.png" />
+<?php endif; ?>
 <!--icons-->
 <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/assets/img/common/favicon.ico" />
 <link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/assets/img/common/apple-touch-icon.png">
@@ -69,10 +114,10 @@ if ( has_post_thumbnail() && !is_archive() ) { //投稿にサムネイルがあ�
   })(document);
 </script>
 <!--FONT / STYLE-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Inter:wght@500;600&Roboto:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Inter:wght@500;600&family=Roboto:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?t=20221102" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/lp/lp01.css" type="text/css" media="all" />
 <script type='text/javascript' src='<?php echo get_option('home'); ?>/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script> 

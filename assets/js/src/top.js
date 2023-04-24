@@ -3,8 +3,36 @@ import 'swiper/css/bundle';
 import lottie from 'lottie-web'
 import StickySidebar from 'sticky-sidebar'
 import 'rellax'
-/**lottie.jsロゴアニメーション（初回のみ）*/
 
+
+
+const ua = navigator.userAgent.toLowerCase()
+if (/android|ipod|ipad|iphone|macintosh/.test(ua) && 'ontouchend' in document) {
+  window.addEventListener('orientationchange', () => {
+    setTimeout(function () {
+      mnFix();
+    }, 100);
+  });
+} else {
+  window.addEventListener('resize', () => {
+    mnFix();
+  });
+}
+
+function mnFix() {
+  const wh = window.innerHeight;
+  const heroImg = document.querySelector(".index_hero__img");
+  const adjustwh = 0;
+  if (window.matchMedia('(max-width: 767px)').matches) { 
+    heroImg.style.height = (wh - 60)  + "px";
+  } else {
+    heroImg.style.height = (wh - 130) + "px";
+  }
+}
+
+
+
+/**lottie.jsロゴアニメーション（初回のみ）*/
 //トップアニメーション
 const keyName = 'visited';
 const keyValue = true;
@@ -22,8 +50,8 @@ intro_logo_animation.onComplete = () => {
 }
 
 window.addEventListener('DOMContentLoaded', function () {
+  mnFix();
   //sessionStorageで初回のみスプラッシュアニメを再生
-
   /*if (url_hash) {
   	 setTimeout(function () {
             intro_logo_animation.play();
@@ -101,7 +129,10 @@ hidden.forEach(hidden => {
 function InView(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('js-active');
+		//少し遅らせることで読み込み直後の場合なめらか
+		setTimeout(function () {
+          entry.target.classList.add('js-active');
+        }, 200);
       concept_logo_animation.play(); //ロゴアニメスタート
     };
   });
