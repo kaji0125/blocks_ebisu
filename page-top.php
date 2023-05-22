@@ -489,10 +489,10 @@ Template Name:トップページ
         <div class="modalbtn" data-id="#modal-04"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_004.webp" alt=""/></div>
       </li>
       <li class="swiper-slide">
-        <div class="modalbtn" data-id="#modal-05"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_005.webp" alt=""/></div>
+        <div class="modalbtn" data-id="#modal-05"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_005_th.webp" alt=""/></div>
       </li>
       <li class="swiper-slide">
-        <div class="modalbtn" data-id="#modal-06"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_006.webp" alt=""/></div>
+        <div class="modalbtn" data-id="#modal-06"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_006_th.webp" alt=""/></div>
       </li>
       <li class="swiper-slide">
         <div class="modalbtn" data-id="#modal-07"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_007.webp" alt=""/></div>
@@ -500,6 +500,43 @@ Template Name:トップページ
       <li class="swiper-slide">
         <div class="modalbtn" data-id="#modal-08"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_008.webp" alt=""/></div>
       </li>
+		
+		<li class="swiper-slide">
+        <div class="modalbtn" data-id="#modal-09"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_009.webp" alt=""/></div>
+      </li>
+		
+		<li class="swiper-slide">
+        <div class="modalbtn" data-id="#modal-10"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_010.webp" alt=""/></div>
+      </li>
+		
+		<li class="swiper-slide">
+        <div class="modalbtn" data-id="#modal-11"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_011.webp" alt=""/></div>
+      </li>
+		
+		<li class="swiper-slide">
+        <div class="modalbtn" data-id="#modal-12"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_012_th.webp" alt=""/></div>
+      </li>
+		
+		<li class="swiper-slide">
+        <div class="modalbtn" data-id="#modal-13"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_013.webp" alt=""/></div>
+      </li>
+		
+		<li class="swiper-slide">
+        <div class="modalbtn" data-id="#modal-14"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_014.webp" alt=""/></div>
+      </li>
+		
+		<li class="swiper-slide">
+        <div class="modalbtn" data-id="#modal-15"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_015.webp" alt=""/></div>
+      </li>
+		
+		<li class="swiper-slide">
+        <div class="modalbtn" data-id="#modal-16"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_016_th.webp" alt=""/></div>
+      </li>
+		
+		<li class="swiper-slide">
+        <div class="modalbtn" data-id="#modal-17"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_017_th.webp" alt=""/></div>
+      </li>
+		
     </ul>
   </div>
   <div class="modal" id="modal-01">
@@ -534,6 +571,52 @@ Template Name:トップページ
     <div class="modal_close"></div>
     <div class="photo"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_008.webp" alt=""/></div>
   </div>
+	  
+	   <div class="modal" id="modal-09">
+    <div class="modal_close"></div>
+    <div class="photo"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_009.webp" alt=""/></div>
+  </div>
+	  
+	   <div class="modal" id="modal-10">
+    <div class="modal_close"></div>
+    <div class="photo"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_010.webp" alt=""/></div>
+  </div>
+	  
+	   <div class="modal" id="modal-11">
+    <div class="modal_close"></div>
+    <div class="photo"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_011.webp" alt=""/></div>
+  </div>
+	  
+	   <div class="modal" id="modal-12">
+    <div class="modal_close"></div>
+    <div class="photo"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_012.webp" alt=""/></div>
+  </div>
+	  
+	   <div class="modal" id="modal-13">
+    <div class="modal_close"></div>
+    <div class="photo"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_013.webp" alt=""/></div>
+  </div>
+	  
+	   <div class="modal" id="modal-14">
+    <div class="modal_close"></div>
+    <div class="photo"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_014.webp" alt=""/></div>
+  </div>
+	  
+	   <div class="modal" id="modal-15">
+    <div class="modal_close"></div>
+    <div class="photo"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_015.webp" alt=""/></div>
+  </div>
+	  
+	   <div class="modal" id="modal-16">
+    <div class="modal_close"></div>
+    <div class="photo"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_016.webp" alt=""/></div>
+  </div>
+	  
+	   <div class="modal" id="modal-17">
+    <div class="modal_close"></div>
+    <div class="photo"><img src="<?php bloginfo('template_url'); ?>/assets/img/top/slide_photo_017.webp" alt=""/></div>
+  </div>
+
 </div>
   <div class="index_faq in_view" id="index_faq">
     <h2 class="title_h2"><span>FAQ</span></h2>
