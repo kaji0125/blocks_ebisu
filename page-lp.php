@@ -384,6 +384,12 @@ Template Name:BLOCKS EBISU LP
 		<li class="swiper-slide"> <img src="<?php bloginfo('template_url'); ?>/assets/img/lp/lp01/slide_photo_009.webp" alt=""/></li>
 		<li class="swiper-slide"> <img src="<?php bloginfo('template_url'); ?>/assets/img/lp/lp01/slide_photo_010.webp" alt=""/></li>
 		<li class="swiper-slide"> <img src="<?php bloginfo('template_url'); ?>/assets/img/lp/lp01/slide_photo_011.webp" alt=""/></li>
+		<li class="swiper-slide"> <img src="<?php bloginfo('template_url'); ?>/assets/img/lp/lp01/slide_photo_012.webp" alt=""/></li>
+		<li class="swiper-slide"> <img src="<?php bloginfo('template_url'); ?>/assets/img/lp/lp01/slide_photo_013.webp" alt=""/></li>
+		<li class="swiper-slide"> <img src="<?php bloginfo('template_url'); ?>/assets/img/lp/lp01/slide_photo_014.webp" alt=""/></li>
+		<li class="swiper-slide"> <img src="<?php bloginfo('template_url'); ?>/assets/img/lp/lp01/slide_photo_015.webp" alt=""/></li>
+		<li class="swiper-slide"> <img src="<?php bloginfo('template_url'); ?>/assets/img/lp/lp01/slide_photo_016.webp" alt=""/></li>
+		<li class="swiper-slide"> <img src="<?php bloginfo('template_url'); ?>/assets/img/lp/lp01/slide_photo_017.webp" alt=""/></li>
       </ul>
     </div>
   </div>
