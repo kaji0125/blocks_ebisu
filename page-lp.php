@@ -114,7 +114,7 @@ Template Name:BLOCKS EBISU LP
           <div class="lp-location__access">JR山手線・東京メトロ日比谷線「恵比寿」駅より徒歩7分<br>
             東京メトロ日比谷線「広尾」駅より徒歩10分</div>
         </div>
-        <div class="lp-location__link"> <a href="https://goo.gl/maps/o7BD3brEB8fCStZg7" target="_blank">Google map</a> </div>
+        <div class="lp-location__link"> <a href="https://goo.gl/maps/QVN5KdTwhTt4gn2m7" target="_blank">Google map</a> </div>
       </div>
     </div>
     <div class="lp-facility">

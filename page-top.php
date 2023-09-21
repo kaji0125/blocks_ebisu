@@ -232,7 +232,7 @@ Template Name:トップページ
         東京都渋谷区広尾1丁目11-2 BLOCKS 恵比寿</p>
       <p>JR山手線・東京メトロ日比谷線「恵比寿」駅より徒歩7分<br>
         東京メトロ日比谷線「広尾」駅より徒歩10分</p>
-      <a href="https://goo.gl/maps/o7BD3brEB8fCStZg7" target="_blank">Google map</a> </div>
+      <a href="https://goo.gl/maps/QVN5KdTwhTt4gn2m7" target="_blank">Google map</a> </div>
   </div>
   <div class="index_floor" id="index_plan">
     <h2 class="title_h2"><span>FLOOR PLAN</span></h2>
